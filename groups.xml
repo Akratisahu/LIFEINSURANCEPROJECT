@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+	<groups>
+		<run>
+			<include name="regression"></include>
+			<exclude name="Add"></exclude>
+		</run>
+	</groups>
+<test thread-count="1" parallel="tests" name="Test">
+  	<classes>
+      <class name="com.Test.DeleteTest"/>
+      <class name="com.Test.EditClient"/>
+      <class name="com.Test.Addnominee"/>
+      <class name="com.Test.PaymentTest"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
